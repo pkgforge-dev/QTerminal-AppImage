@@ -11,6 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/icons/hicolor/64x64/apps/qterminal.png
 export DESKTOP=/usr/share/applications/qterminal.desktop
 export ANYLINUX_LIB=1
+export URUNTIME_PRELOAD=1
 # libqtermwidget is hardcoded to look into /usr/share
 export PATH_MAPPING='/usr/share/qtermwidget*:${SHARUN_DIR}/share/qtermwidget*'
 
