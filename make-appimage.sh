@@ -10,6 +10,8 @@ export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/64x64/apps/qterminal.png
 export DESKTOP=/usr/share/applications/qterminal.desktop
+# libqtermwidget is hardcoded to look into /usr/share
+export PATH_MAPPING='/usr/share/qtermwidget*:${SHARUN_DIR}/share/qtermwidget*'
 
 # Deploy dependencies
 quick-sharun /usr/bin/qterminal /usr/share/qterminal /usr/share/qtermwidget*
