@@ -12,7 +12,7 @@ export ICON=/usr/share/icons/hicolor/64x64/apps/qterminal.png
 export DESKTOP=/usr/share/applications/qterminal.desktop
 
 # Deploy dependencies
-quick-sharun /usr/bin/qterminal /usr/share/qterminal
+quick-sharun /usr/bin/qterminal /usr/share/qterminal /usr/share/qtermwidget*
 
 # Additional changes can be done in between here
 
