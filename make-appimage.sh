@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 VERSION=$(pacman -Q qterminal | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.bg.hook"
+export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/64x64/apps/qterminal.png
 export DESKTOP=/usr/share/applications/qterminal.desktop
